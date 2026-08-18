@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <world name="greenhouse_v1">
+    <gravity>0 0 -9.81</gravity>
+
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+      <cast_shadows>true</cast_shadows>
+    </light>
+
+    <model name="ground">
+      <static>true</static>
+      <pose>5 0 -0.05 0 0 0</pose>
+      <link name="ground_link">
+        <collision name="collision">
+          <geometry><box><size>12 4 0.1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>12 4 0.1</size></box></geometry>
+          <material><ambient>0.35 0.30 0.22 1</ambient><diffuse>0.45 0.40 0.30 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="greenhouse_left_row">
+      <static>true</static>
+      <pose>5 1.55 0.30 0 0 0</pose>
+      <link name="row_link">
+        <collision name="collision">
+          <geometry><box><size>10 0.55 0.60</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>10 0.55 0.60</size></box></geometry>
+          <material><ambient>0.10 0.35 0.12 1</ambient><diffuse>0.12 0.45 0.15 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="greenhouse_right_row">
+      <static>true</static>
+      <pose>5 -1.55 0.30 0 0 0</pose>
+      <link name="row_link">
+        <collision name="collision">
+          <geometry><box><size>10 0.55 0.60</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>10 0.55 0.60</size></box></geometry>
+          <material><ambient>0.10 0.35 0.12 1</ambient><diffuse>0.12 0.45 0.15 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tomato_001">
+      <static>true</static>
+      <pose>4.20 1.20 1.10 0 0 0</pose>
+      <link name="fruit_link">
+        <collision name="collision"><geometry><sphere><radius>0.04</radius></sphere></geometry></collision>
+        <visual name="visual">
+          <geometry><sphere><radius>0.04</radius></sphere></geometry>
+          <material><ambient>0.70 0.05 0.04 1</ambient><diffuse>0.90 0.08 0.05 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tomato_002">
+      <static>true</static>
+      <pose>6.20 1.20 1.25 0 0 0</pose>
+      <link name="fruit_link">
+        <collision name="collision"><geometry><sphere><radius>0.04</radius></sphere></geometry></collision>
+        <visual name="visual">
+          <geometry><sphere><radius>0.04</radius></sphere></geometry>
+          <material><ambient>0.70 0.05 0.04 1</ambient><diffuse>0.90 0.08 0.05 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tomato_003">
+      <static>true</static>
+      <pose>8.20 1.20 1.05 0 0 0</pose>
+      <link name="fruit_link">
+        <collision name="collision"><geometry><sphere><radius>0.04</radius></sphere></geometry></collision>
+        <visual name="visual">
+          <geometry><sphere><radius>0.04</radius></sphere></geometry>
+          <material><ambient>0.70 0.05 0.04 1</ambient><diffuse>0.90 0.08 0.05 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>

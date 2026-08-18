@@ -1,0 +1,8 @@
+base:
+  name: agilex_generic
+  kinematics: differential
+  geometry_verified: false
+  geometry_source: unspecified_product_profile
+  notes: >-
+    This is an interface-level second-base profile only. Product-specific
+    dimensions and controller parameters are intentionally not invented in V0.1.
