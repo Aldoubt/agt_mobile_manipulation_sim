@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>agt_mission_manager</name>
+  <version>0.1.0</version>
+  <description>Mission runtime and adapter contracts for AGT mobile manipulation simulation.</description>
+  <maintainer email="xuanyang.robotics@gmail.com">Xuan Yang</maintainer>
+  <license>Apache-2.0</license>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
