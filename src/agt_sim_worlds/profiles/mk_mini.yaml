@@ -1,0 +1,15 @@
+base:
+  name: mk_mini
+  kinematics: ackermann
+  geometry_verified: false
+  geometry_source: provisional_simulation_profile
+  wheelbase: 0.60
+  track: 0.517
+  wheel_radius: 0.12
+  footprint:
+    length: 0.70
+    width: 0.55
+  notes: >-
+    The kinematic profile is intended for the MK Mini Ackermann simulation.
+    Visual and collision dimensions remain provisional until checked against
+    measured hardware or CAD.
