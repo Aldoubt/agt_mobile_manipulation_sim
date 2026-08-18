@@ -1,0 +1,65 @@
+world:
+  name: greenhouse_v1
+  frame: map
+  description: Synthetic known-world baseline for mobile-manipulation simulation.
+
+targets:
+  - id: tomato_001
+    class: tomato
+    pose:
+      position: [4.20, 1.20, 1.10]
+      orientation_rpy: [0.0, 0.0, 0.0]
+    viewpoints:
+      - id: front
+        pose:
+          position: [4.20, 0.75, 1.20]
+          orientation_rpy: [1.5708, 0.0, 1.5708]
+      - id: left
+        pose:
+          position: [3.90, 0.95, 1.20]
+          orientation_rpy: [1.5708, 0.0, 0.7854]
+    manipulation_poses:
+      - id: reach
+        pose:
+          position: [4.20, 1.10, 1.10]
+          orientation_rpy: [0.0, 1.5708, 1.5708]
+
+  - id: tomato_002
+    class: tomato
+    pose:
+      position: [6.20, 1.20, 1.25]
+      orientation_rpy: [0.0, 0.0, 0.0]
+    viewpoints:
+      - id: front
+        pose:
+          position: [6.20, 0.75, 1.30]
+          orientation_rpy: [1.5708, 0.0, 1.5708]
+      - id: left
+        pose:
+          position: [5.90, 0.95, 1.30]
+          orientation_rpy: [1.5708, 0.0, 0.7854]
+    manipulation_poses:
+      - id: reach
+        pose:
+          position: [6.20, 1.10, 1.25]
+          orientation_rpy: [0.0, 1.5708, 1.5708]
+
+  - id: tomato_003
+    class: tomato
+    pose:
+      position: [8.20, 1.20, 1.05]
+      orientation_rpy: [0.0, 0.0, 0.0]
+    viewpoints:
+      - id: front
+        pose:
+          position: [8.20, 0.75, 1.15]
+          orientation_rpy: [1.5708, 0.0, 1.5708]
+      - id: left
+        pose:
+          position: [7.90, 0.95, 1.15]
+          orientation_rpy: [1.5708, 0.0, 0.7854]
+    manipulation_poses:
+      - id: reach
+        pose:
+          position: [8.20, 1.10, 1.05]
+          orientation_rpy: [0.0, 1.5708, 1.5708]
